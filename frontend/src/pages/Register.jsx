@@ -103,7 +103,7 @@ const Register = () => {
     }
 
     // ✅ รหัสผ่านต้องมากกว่า 8 ตัวอักษร (= อย่างน้อย 9)
-    if (password.length <= 8) {
+    if (password.length < 8) {
       setError("รหัสผ่านต้องมากกว่า 8 ตัวอักษร");
       return;
     }
